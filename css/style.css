@@ -1,0 +1,162 @@
+:root{
+
+    --gris: #f3f3f3;
+    --verde: #6cb500;
+    --grism: #f3f3f3;
+
+}
+
+html {
+    box-sizing: border-box; /*se copia de internet*/
+    font-size: 62.5%; /*para que se adapte*/
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;/*interlinedo para la pagina*/
+  }
+
+.ancho{
+    max-width: 120rem;
+    margin: auto;
+}
+header figure{
+    max-width: 20rem;
+}
+
+header figure img{
+    width: 100%;
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barras {
+    background-color: white;
+    text-decoration: none;
+    color: var(--verde);
+    padding: 1rem;
+    border-radius: .5rem;
+    display: none;
+    font-size: 3rem;
+  }
+nav{
+    max-width: 65rem;
+}
+
+nav a{
+    margin: 2.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* seccion del banner */
+
+.background{
+    background-image: url(../img/foto_slide.jpg);
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.background h1{
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+    
+}
+/* seccion de servicos */
+.servicios{
+    text-align: center;
+}
+.informacion_servicios h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.informacion_servicios p{
+    font-size: 2rem;
+    color: var(--verde);
+}
+
+.informacion_servicios-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacion_servicios-article{
+    width: 37rem;
+    border-radius: 1.5rem;
+    background-color: var(--gris);
+}
+
+.informacion_servicios-article h2{
+    color: var(--verde);
+}
+
+footer{
+    margin-top: 5rem;
+    background-color: var(--verde);
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+/* media query */
+
+@media screen and (max-width:480px){
+    .contenido{
+        display: block;
+    }
+    .contenido_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenido_header figure{
+        width: 17rem;
+    }
+
+    .contenido_header figure img{
+        width: 100%;
+    }
+
+    .barras{
+        display: block;
+        /* border: 1px red solid; */
+       
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    nav a{
+        padding-bottom: 1rem;
+        border-bottom: dotted;
+        display: block;
+    }
+
+    .informacion_servicios-div{
+        display: inline-block;
+    }
+
+    .background h1{
+        margin-left: 1rem;
+    }
+
+}

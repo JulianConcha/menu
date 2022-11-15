@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="contenido ancho">
+        <div class="contenido_header">
+          <figure>
+            <img src="img/logo_arriba.png" alt="logo principal" />
+          </figure>
+          <li id= "icono" class="barras">
+            <i  class='fas fa-bars'></i>
+          </li>
+        </div>
+
+        <nav id= "caja">
+          
+          <a href="#">Inicio</a>
+          <a href="#">Servicios</a>
+          <a href="#">Nuestros Productos</a>
+          <a href="#">Contactanos</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="background">
+        <div class="ancho ">
+            <h1>Cultivamos verduras organicas
+                <br>
+                y las traemos a tu mesa.
+            </h1>
+        </div>
+    </section>
+
+    <!-- seccion de servicios -->
+
+    <section>
+        <div class="servicios ancho">
+            <div class="informacion_servicios">
+                <h2>Nuestro Servicios</h2>
+                <p>Lo que ofrecemos</p>
+            </div>
+
+            <div class="informacion_servicios-div">
+                <article class="informacion_servicios-article">
+                    <figure>
+                        <img src="img/icono1.png" alt="">
+                    </figure>
+                    <h2>Ganado Vacuno</h2>
+                    <p>Carne de res producida sin ingenieria <br>genetica, uso de radiacion ionizante o lodos <br> de depuradora</p>
+                </article>
+
+                <article class="informacion_servicios-article">
+                    <figure>
+                        <img src="img/icono2.png" alt="">
+                    </figure>
+                    <h2>Productos lacteos</h2>
+                    <p>Los productos lacteos como la leche, el<br>queso y el yogur contiene los nutrientes que <br> su cuerpo necesita</p>
+                </article>
+
+                <article class="informacion_servicios-article">
+                    <figure>
+                        <img src="img/icono3.png" alt="">
+                    </figure>
+                    <h2>Frutas de la Huerta</h2>
+                    <p>Cubre todo lo que necesitas saber para <br>cultivar y comercializar con éxito sus <br> propias frutas organicas de huerta</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="ancho">
+            <figure>
+                <img src="img/logo_abajo.png" alt="">
+            </figure>
+
+        </div>
+    </footer>
+
+    
+
+    <script>
+      $("#icono").click(function(){
+       $("#caja").slideToggle();
+      });
+    </script>
+  </body>
+</html>
